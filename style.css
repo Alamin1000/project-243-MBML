@@ -1,0 +1,506 @@
+/*-----------------------------------=========Main-Style-Sheet=========----------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap');
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('webfonts/HelveticaNeue-CondensedBlack.woff') format('woff'),
+      url('webfonts/HelveticaNeue-CondensedBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('webfonts/HelveticaNeue-CondensedBold.woff') format('woff'),
+      url('webfonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('webfonts/HelveticaNeue-Light.woff') format('woff'),
+      url('webfonts/HelveticaNeue-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('webfonts/HelveticaNeue-Italic.woff') format('woff'),
+      url('webfonts/HelveticaNeue-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('webfonts/HelveticaNeue-LightItalic.woff') format('woff'),
+      url('webfonts/HelveticaNeue-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('webfonts/HelveticaNeue-Medium.woff') format('woff'),
+      url('webfonts/HelveticaNeue-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('webfonts/HelveticaNeue-UltraLight.woff') format('woff'),
+      url('webfonts/HelveticaNeue-UltraLight.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('webfonts/HelveticaNeue-UltraLightItalic.woff') format('woff'),
+      url('webfonts/HelveticaNeue-UltraLightItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('webfonts/HelveticaNeue.woff') format('woff'),
+      url('webfonts/HelveticaNeue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('webfonts/HelveticaNeue-Bold.woff') format('woff'),
+      url('webfonts/HelveticaNeue-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('webfonts/HelveticaNeue-BoldItalic.woff') format('woff'),
+      url('webfonts/HelveticaNeue-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+:root {
+  --theme__color1: #FB9700;
+  --theme__color2: #7AD1FA;
+  --text_color: #707070;
+  --background: #ffffff;
+  --op-background: #111111;
+  --assistant: 'Assistant', sans-serif;
+  --helveticaNeue: 'Helvetica Neue';
+}
+*,::before,::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  line-height: 1.65;
+  background-color: #fff;
+  color: var(--text_color);
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--assistant);
+}
+a, a:active, a:focus, a:active, a:hover {
+  text-decoration:none !important;
+  color: inherit;
+}
+input{
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover,
+a:focus,
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+select:active,
+textarea:focus,
+textarea:hover,
+button:focus {
+  outline: none;
+}
+::placeholder {
+  opacity: 1;
+}
+:focus::placeholder {
+  opacity: 0;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+iframe {
+  width: 100%;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-weight: 700;
+}
+.h2 {
+  font-size: 50px;
+  margin: 0 0 19px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  font-family: var(--helveticaNeue);
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+  margin-bottom: 15px;
+}
+p:last-child{
+  margin: 0;
+}
+.main-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1245px;
+  }
+  .container.container-np {
+    max-width: 1295px;
+  }
+}
+
+
+
+
+/* header */
+.header-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.header-in {
+  padding: 2px 0 5px;
+  background: var(--op-background);
+  color: #fff;
+}
+.header-section-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: block;
+  width: 100px;
+}
+.header-logo img {
+
+}
+
+.hr-menu {
+
+}
+.hr-menu li {
+  margin-right: 20px;
+}
+.hr-menu li:last-child {
+  margin-right: 0;
+}
+.hr-menu li a {
+  font-size: 15px;
+  transition: 0.3s;
+}
+.hr-menu li a:hover {
+  color: var(--theme__color1);
+}
+/* header-end */
+
+
+
+
+/* --preloader-- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid var(--theme__color1);
+  border-top-color: #e2eefd;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+@-webkit-keyframes animate-preloader {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+@keyframes animate-preloader {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+/* --preloader-end-- */
+
+
+/* ---hero-section--- */
+.hero-section {
+  background: url('images/hero-bg.png') no-repeat center center/cover;
+  color: #fff;
+  border-bottom: 7px solid var(--theme__color2);
+}
+.hero-section-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 563px;
+  padding: 50px 0;
+}
+
+.hero-logo {
+
+}
+.hero-logo img {
+
+}
+
+.hero-content {
+  padding: 0 0 0 28px;
+  border-left: 1px solid var(--theme__color1);
+}
+.hero-content .h1 {
+  font-size: 31px;
+  letter-spacing: 1.5px;
+  line-height: 1.65;
+  font-weight: 400;
+  font-family: var(--helveticaNeue);
+}
+/* ---hero-section---end */
+
+
+
+/* ---about-section--- */
+.about-section {
+  padding: 65px 0;
+}
+.about-section-inner {
+
+}
+
+.about-content-row {
+  display: flex;
+}
+.about-content-row .left {
+  flex-grow: 1;
+}
+.about-content-row .left p {
+  letter-spacing: 0.4px;
+}
+.about-content-row .right {
+  margin: 0 0 0 9%;
+  padding: 0 0 0 63px;
+  border-left: 1px solid var(--theme__color1);
+  flex-shrink: 0;
+}
+.about-content-row .right p {
+  line-height: 2;
+  letter-spacing: 0.4px;
+}
+/* ---about-section---end */
+
+
+
+/* ---mv-section--- */
+.mv-section {
+  padding: 137px 0;
+  background: url('images/mission-vision-bg.png') no-repeat center center/cover;
+  color: #fff;
+  border-bottom: 7px solid var(--theme__color2);
+}
+.mv-section-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mission {
+
+}
+
+.vision {
+  padding: 0 0 0 16px;
+  border-left: 1px solid var(--theme__color1);
+}
+/* ---mv-section---end */
+
+
+/* ---hw-section--- */
+.hw-section {
+  padding: 63px 0 75px;
+}
+.hw-section-inner {
+  
+}
+.hw-sec-title {
+  margin: 0 0 50px;
+}
+
+.hw-wrapper {
+  --inner-space: 200px;
+  --bt-space: var(--inner-space);
+  --item: 3;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 calc(var(--inner-space) * -0.5) calc(var(--bt-space) * -1 );
+  justify-content: center;
+}
+.single-hw {
+  width: calc((100% / var(--item)) - var(--inner-space));
+  margin: 0  calc(var(--inner-space) * 0.5) var(--bt-space);
+  position: relative;
+}
+.single-hw::after {
+  content: '';
+  height: calc(100% + 50px);
+  width: 72px;
+  background: url('images/hw-col-br.png') no-repeat center center/100% 100%;
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: calc(var(--inner-space) * -0.5);
+  transform: translate(50%,0);
+}
+.single-hw:last-child::after {
+  display: none;
+}
+.single-hw .icon {
+  margin: 0 0 15px;
+  width: 100%;
+}
+.single-hw .icon img {
+  width: 100%;
+}
+.single-hw .texts {
+  text-align: center;
+}
+.single-hw .texts h4 {
+  font-size: 21px;
+  margin: 0 0 5px;
+  font-weight: 600;
+}
+.single-hw .texts p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+/* ---hw-section---end */
+
+
+
+/* ---vp-section--- */
+.vp-section {
+  padding: 60px 0;
+  background: var(--op-background);
+  color: #fff;
+}
+.vp-section-inner {
+
+}
+.vp-sec-title {
+  margin: 0 0 60px;
+}
+
+.vp-wrapper {
+  --inner-space: 85px;
+  --bt-space: var(--inner-space);
+  --item: 4;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 calc(var(--inner-space) * -0.5) calc(var(--bt-space) * -1 );
+  justify-content: center;
+}
+.single-vp {
+  width: calc((100% / var(--item)) - var(--inner-space));
+  margin: 0  calc(var(--inner-space) * 0.5) var(--bt-space);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.single-vp .icon {
+  height: 75px;
+  margin: 0 0 27px;
+  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.single-vp .icon img {
+  max-width: initial;
+  position: absolute;
+  transform: scale(1);
+}
+.single-vp .texts {
+
+}
+.single-vp .texts h4 {
+  font-size: 21px;
+  font-weight: 600;
+}
+.single-vp .texts p {
+  font-size: 16px;
+}
+/* ---vp-section---end */
