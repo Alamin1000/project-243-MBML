@@ -123,6 +123,20 @@
         width: 100%;
         margin-bottom: 40px;
     }
+
+    .tm-client-wrap .tm-client-single img {
+        max-width: 92px;
+        max-height: 55px;
+    }
+    .tm-section {
+        padding: 48px 0px 50px;
+        border-top-width: 4px;
+    }
+    .tm-slide .texts p {
+        line-height: 27px;
+    }
+
+
 }
 
 
@@ -190,6 +204,26 @@
     .team-section {
         padding: 50px 0px 20px;
     }
+
+    /* @dev2 */
+    .tm-slide .texts p img.quote.fist {
+        left: -38px;
+    }
+    .tm-slide .texts {
+        padding: 0px 15px;
+    }
+    .tm-client-wrap .tm-client-single {
+        flex: 0 0 auto;
+        width: 33.33%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .tm-client-wrap {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+
 }
 
 
